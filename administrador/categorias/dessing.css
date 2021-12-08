@@ -1,0 +1,38 @@
+
+  
+.centrarp{
+  text-align: center;
+}
+
+.mostrarcat{
+    margin: 50px auto 0px auto;
+    max-width: 700px;
+    width: 100%;
+}
+
+.ellogo{
+height: 50px;
+}
+
+.nav-brand{
+    height: 125px;
+}
+
+.ocultar{
+  display:none;
+}
+
+#unaimg{
+  margin-left:40px;
+ }
+
+ .button .botonmarge{
+   
+  margin-left:240px;
+  background-color: blueviolet;
+ }
+
+#textodecargaimagen{
+color: black;
+}
+
