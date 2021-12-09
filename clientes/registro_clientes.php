@@ -18,8 +18,8 @@ header('Access-Control-Allow-Methods: GET, POST, PUT, DELETE');
 	
 //------------------------------------------------------//
 	
-	$nombre=ucwords($nombre);
-	$apellidos=ucwords($apellidos);
+	//$nombre=ucwords($nombre);
+	//$apellidos=ucwords($apellidos);
 	
 	
 	$nombre=utf8_decode($nombre);
@@ -31,11 +31,10 @@ header('Access-Control-Allow-Methods: GET, POST, PUT, DELETE');
 	$telefono=utf8_decode($telefono);
 	$password=utf8_decode($password);
 	
-	mysqli_query($conexion,"INSERT INTO clientes (nombre,apellidos,email,direccion,cp,estado,telefono,password) VALUES 
-	('$nombre','$apellidos','$email','$direccion','$cp','$estado','$telefono','$password')");
+	mysqli_query($conexion,"INSERT INTO clientes (nombre,apellido,email,direccion,cp,estado,telefono,password) VALUES 	('$nombre','$apellidos','$email','$direccion','$cp','$estado','$telefono','$password')");
 
 
-	
+
 
 
 cerrarconexion();
