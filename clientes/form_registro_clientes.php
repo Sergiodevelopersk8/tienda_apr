@@ -192,7 +192,7 @@ header('Access-Control-Allow-Methods: GET, POST, PUT, DELETE');
 <!-- aler exito-->
 <div class="alert alert-success alert-dismissible ocultar" id="exito" role="alert">
  	<button type="button" class="close" data-dismiss="alert" aria-label="Close">	<span 			    aria-hidden="true">&times;</span></button>
-    <p style="text-align:center"><strong>Gracias por registrarse.</strong>Para completar el registro haga click en el enlace que le hemos enviado a su correo electrónico, de lo contrario pasadas 24 horas se procederá a eliminar su solicitud.</p>
+    <p style="text-align:center"><strong>Gracias por registrarse.</strong></p>
     </div>
     
 <!-- email repetido-->
@@ -265,7 +265,9 @@ header('Access-Control-Allow-Methods: GET, POST, PUT, DELETE');
   <!--scrollreveal-->
   <script src="https://unpkg.com/scrollreveal"></script>
 
-
+<script>
+  
+</script>
 
 </body>
 

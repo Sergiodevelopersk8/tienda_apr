@@ -96,12 +96,24 @@ $.ajax({
 	beforeSend:function(){
 		
 		$("#carga").show("fast");
+		//$("#emailrepetido").hide("fast");
+		//$("#exito").hide("fast");
 		
 	},
 	
-	success:function(){
+	success:function(resp){
 		
+	/*	if(resp == "exito"){
 		$("#carga").hide("fast");
+		$("#emailrepetido").hide("fast");
+		$("#exito").show("slow");
+		}*/
+		$("#carga").hide("fast");
+	/*	if(resp == "falso"){
+			$("#carga").hide("fast");
+			$("#emailrepetido").show("fast");
+			$("#exito").hide("slow");
+		}*/
 		//location.href="index.php";
 	
 	}
