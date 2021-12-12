@@ -1,6 +1,6 @@
 <?php 
 include('../php/conexion.php');
-include('../php/funciones.php');
+//include('../php/funciones.php');
 header('Access-Control-Allow-Origin: *');
 header("Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept");
 header('Access-Control-Allow-Methods: GET, POST, PUT, DELETE');
@@ -40,11 +40,11 @@ if(mysqli_num_rows($registros)==0){
 
 
 	mysqli_query($conexion,"INSERT INTO clientes (nombre,apellido,email,direccion,cp,estado,telefono,password) VALUES 	('$nombre','$apellidos','$email','$direccion','$cp','$estado','$telefono','$passfuerte')");
-echo ("exito");
+echo "exito";
 }
 
 else{
-	echo ("falso");
+	echo "fallo";
 }
 
 
