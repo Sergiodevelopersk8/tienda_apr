@@ -123,15 +123,15 @@ if($_FILES['imagen3']['size']!=""){
 
     mysqli_query($conexion,"insert into imagenes (nombre,prioridad,id_producto) 
     values ('$nombreimagen3','3','$fila[id_producto]')");
-    echo "ok";
+   // echo "ok";
 
 }
 
 
 
-echo "ok";
-cerrarconexion();
 
+cerrarconexion();
+echo "ok";
         
        
 }

@@ -2,7 +2,7 @@
 
 
 
-/*
+
 function validarformulario(){
     if(document.formproductos.nombre.value==""){
         $("#avisonombre").show("fast");
@@ -54,9 +54,9 @@ function validarformulario(){
                  },
                  success:function(resp){
                      
-                   
+                 debugger;  
 
-                if(resp=="exito" || resp==" seinserto" || resp== "ok"){
+                if(resp == "ok"){
             
     $("#errorimagen").hide("fast");
                      $("#contenedor_carga").hide("fast");        
@@ -65,6 +65,7 @@ function validarformulario(){
                     $("#loadimg").hide("fast");
                    
 }
+debugger;
 if(resp=="nombrerepetido"){
     
     $("#contenedor_carga").hide("fast");
@@ -89,7 +90,7 @@ if(resp=="errorimagen"){
 }
 
 /**zona de exito al validar */
-/*
+
 function mostrar(){
     $("#unaimg").show("fast");
     

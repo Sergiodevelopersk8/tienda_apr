@@ -227,7 +227,7 @@ if (isset($_SESSION['administrador'])){
     </div>
     
      <script type="text/javascript">
-   
+   /*
 
 
 function validarformulario(){
@@ -314,8 +314,9 @@ if(resp=="errorimagen"){
              }
 
 }
-
+*/
 /**zona de exito al validar */
+/*
 function mostrar(){
     $("#unaimg").show("fast");
     
@@ -346,7 +347,7 @@ function validadocategoria(){
     $("#categorias").hide("slow");
     document.formproductos.categorias.style.border='1px solid green';
 
-}
+}*/
 </script>
    
 </body>
