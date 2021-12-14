@@ -30,7 +30,7 @@ header('Access-Control-Allow-Methods: GET, POST, PUT, DELETE');
 	$cp=utf8_decode($cp);
 	$telefono=utf8_decode($telefono);
 	$password=utf8_decode($password);
-	$passfuerte = password_hash($password,PASSWORD_DEFAULT);
+	//$passfuerte = password_hash($password,PASSWORD_DEFAULT);
 
 //Verificación de clientes
 
@@ -39,7 +39,7 @@ $registros = mysqli_query($conexion,"SELECT email FROM clientes WHERE email='$em
 if(mysqli_num_rows($registros)==0){
 
 
-	mysqli_query($conexion,"INSERT INTO clientes (nombre,apellido,email,direccion,cp,estado,telefono,password) VALUES 	('$nombre','$apellidos','$email','$direccion','$cp','$estado','$telefono','$passfuerte')");
+	mysqli_query($conexion,"INSERT INTO clientes (nombre,apellido,email,direccion,cp,estado,telefono,password) VALUES 	('$nombre','$apellidos','$email','$direccion','$cp','$estado','$telefono','$password')");
 echo "exito";
 }
 

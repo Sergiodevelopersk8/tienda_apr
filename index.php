@@ -139,7 +139,9 @@ $registros2 = mysqli_query($conexion, "select id_producto ,precio from productos
               </ul>-->
           </li>
           <li><a href="clientes/form_registro_clientes.php"><span class="tercero"><i class="icon icon-gift"></i></span>clientes</a>
-
+          <ul>
+              <li><a href="login.php">Login</a></li>
+              </ul>
           </li>
           <li><a href="#"><span class="cuarto"><i class="icon icon-gift"></i></span>Regalo4</a>
             <ul>
