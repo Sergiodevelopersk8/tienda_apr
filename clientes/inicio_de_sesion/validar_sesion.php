@@ -9,7 +9,7 @@ if(isset($_POST['email']) && isset($_POST['password'])){
 	$password1=utf8_decode($password);
 	//$passfuerte = password_hash($password1,PASSWORD_DEFAULT);
 	//$passvery = password_verify($password1,$passfuerte['password']);
-	$registros=mysqli_query($conexion,"SELECT id_clientes,nombre,email,password FROM clientes WHERE email='$email' AND password='$password1'");
+	$registros=mysqli_query($conexion,"SELECT id_clientes,nombre,email,password FROM clientes WHERE email='$email' AND password='$password'");
 	
 		if(mysqli_num_rows($registros)==0)	{
 			echo "fallo";}

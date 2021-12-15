@@ -30,8 +30,8 @@ header('Access-Control-Allow-Methods: GET, POST, PUT, DELETE');
 	$cp=utf8_decode($cp);
 	$telefono=utf8_decode($telefono);
 	$password=utf8_decode($password);
-	//$passfuerte = password_hash($password,PASSWORD_DEFAULT);
-
+//$passfuerte = password_hash($password,PASSWORD_DEFAULT);
+//$passfuerte = md5($password);
 //Verificación de clientes
 
 $registros = mysqli_query($conexion,"SELECT email FROM clientes WHERE email='$email'");

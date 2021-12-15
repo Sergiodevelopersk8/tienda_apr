@@ -3,7 +3,7 @@ function validar_sesion(){
 
 var email = document.form_inicio_sesion.email.value;
 var password = document.form_inicio_sesion.password.value;
-debugger;
+//debugger;
 
 $.ajax({
 
