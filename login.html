@@ -22,6 +22,7 @@
 
 <link rel="stylesheet" href="css/bootstrap-theme.min.css">
 <script type="text/javascript" src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
 <script src="js/bootstrap.min.js"></script>
 
 
@@ -88,12 +89,12 @@
       </nav>
     </header>
     
-      <div class="login">
+      <div class="login" id="casilla">
         <div class="login-screen">
           <div class="app-title">
             <h1>Login</h1>
           </div>
-    <form name="form_inicio_sesion">
+    <form name="form_inicio_sesion" >
       <div class="login-form">
             <div class="control-group">
             <input type="text" class="login-field" value="" placeholder="email" id="login-name" name="email">
@@ -107,14 +108,15 @@
     
             <button type="button" class="btn btn-primary btn-large btn-block" onclick="validar_sesion()">login</button>
             <a class="login-link" href="clientes/form_registro_clientes.php">Registrarse</a>
-          </div>
-        </form>
-          
-        </div>
-      </div>
-<!--imagen de carga -->
-<center><div style="display:none;" id="carga"> <img src="imagenes/cargando.gif"> </div></center>
+            <!--imagen de carga -->
+<center><div class="ocultar" id="carga"> <img src="imagenes/cargando.gif"> </div></center>
+<!--error de datos-->
+<div class="alert alert-danger alert-dismissible ocultar" role="alert" id="errordedatos">
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span>
+</button>
+<p class="centrarp">Email o Password incorrectos</p>
 
+</div>
 <!--exito mensaje-->
 <div class="alert alert-success alert-dismissible ocultar" role="alert" id="exito">
   <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span>
@@ -122,14 +124,15 @@
 <p class="centrarp"><strong> sesion correcta</p>
 
 </div>
+          </div>
+        </form>
+          
+        </div>
+      </div>
+<!--exito mensaje-->
 
-  <!--error de datos-->
-  <div class="alert alert-danger alert-dismissible ocultar" role="alert" id="errordedatos">
-    <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span>
-  </button>
-  <p class="centrarp">Email o Password incorrectos</p>
 
-  </div>
+  <!--aqui estaba la alerta de error-->
 
 
 

@@ -11,25 +11,26 @@ $.ajax({
     url:"clientes/inicio_de_sesion/validar_sesion.php",
     data:{"email":email, "password":password},
    
-    before:function(){
+    beforeSend:function(){
         $("#errordedatos").hide("#fast");
         
         $("#exito").hide("#fast");
-        
+        //debugger;
         $("#carga").show("#fast");
     },
 
     success:function(resp){
         if(resp == "exito"){
             $("#carga").hide("#fast");
-
-            location.href="index.php";
+            $("#exito").show("#fast");
+            //location.href="index.php";
         }
 
 if(resp == "fallo")
 {
     $("#carga").hide("#fast");
     $("#errordedatos").show("#fast");
+    $("#casilla").effect("shake",{times: 3}, 1000);
 }
 
     }
