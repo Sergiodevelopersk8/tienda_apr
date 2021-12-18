@@ -18,7 +18,7 @@ if(isset($_POST['email']) && isset($_POST['password'])){
 		else {	
 			$fila=mysqli_fetch_array($registros);
 			
-			$_SESSION['id_cliente']=$fila['id_cliente'];
+			$_SESSION['id_clientes']=$fila['id_clientes'];
 			$_SESSION['nombre_cliente']=utf8_encode($fila['nombre']);
 			/*
 				

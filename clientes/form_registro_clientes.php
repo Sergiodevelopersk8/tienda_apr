@@ -1,4 +1,8 @@
 <?php
+session_start();
+if(isset($_SESSION['id_clientes'])){
+  header('location:../index.php');
+}
 include('../php/conexion.php');
 $registros1=mysqli_query($conexion,"select*from categorias order by categorias asc");
 

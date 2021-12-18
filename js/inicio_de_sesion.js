@@ -23,7 +23,7 @@ $.ajax({
         if(resp == "exito"){
             $("#carga").hide("#fast");
             $("#exito").show("#fast");
-            //location.href="index.php";
+            location.href="index.php";
         }
 
 if(resp == "fallo")
