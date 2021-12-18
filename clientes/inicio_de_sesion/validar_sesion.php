@@ -20,18 +20,18 @@ if(isset($_POST['email']) && isset($_POST['password'])){
 			
 			$_SESSION['id_clientes']=$fila['id_clientes'];
 			$_SESSION['nombre_cliente']=utf8_encode($fila['nombre']);
-			/*
+			
 				
 					
-			if($_POST['crear_cookie']=="true"){
+			if($_POST['crear_cookie'] == "true"){
 				
 				if(!isset($_COOKIE['nombre_cliente']))
 				
 				setcookie("nombre_cliente",utf8_encode($fila['nombre']),time()+300,"/");
 				setcookie("password_cliente",utf8_encode($fila['password']),time()+300,"/");
 				setcookie("email_cliente",utf8_encode($fila['email']),time()+300,"/");	
-				setcookie("id_cliente",$fila['id_cliente'],time()+300,"/");		
-			}*/
+				setcookie("id_clientes",$fila['id_clientes'],time()+300,"/");		
+			}
 			
 			echo "exito";
 			
