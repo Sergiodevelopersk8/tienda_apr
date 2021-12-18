@@ -6,6 +6,17 @@ include('php/conexion.php');
 $registros1 = mysqli_query($conexion, "select * from categorias order by categoria asc");
 
 $registros2 = mysqli_query($conexion, "select id_producto ,precio from productos where inicio=1 limit 0,12 ");
+//$registrosimagen = mysqli_query($conexion, "select nombre from imagenes where id_producto='$_GET[id_producto]' && prioridad=1");
+
+$re1 = mysqli_query($conexion, "select * from categorias order by categoria asc");
+
+$re2 = mysqli_query($conexion, "select id_producto ,precio from productos where inicio=1 limit 0,12 ");
+
+$unide1 = mysqli_query($conexion, "select id_producto ,precio,id_categoria from productos where inicio=1  ");
+
+
+
+//$filaimagen = mysqli_fetch_array($registrosimagen);
 //cerrarconexion();
 
 ?>
@@ -188,10 +199,14 @@ $registros2 = mysqli_query($conexion, "select id_producto ,precio from productos
         <div class="slider-wrapper">
           <div class=inner>
             <article>
+         
               <div class="info top-left">
                 <h3>Producto1</h3>
               </div>
+              
               <img class="Pasar" src="imagenes/regalo.jpg" />
+    <!---->
+    
             </article>
 
             <article>
@@ -221,6 +236,7 @@ $registros2 = mysqli_query($conexion, "select id_producto ,precio from productos
               </div>
               <img class="Pasar" src="imagenes/regalo2.jpg" />
             </article>
+           
           </div>
           <!-- .inner -->
 

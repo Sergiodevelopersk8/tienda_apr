@@ -183,13 +183,15 @@ $fila4 = mysqli_fetch_array($registros4);
         <p class="detallecaracteristica1">
           <?php
           $datadescrpcion = explode(" ", utf8_encode($fila3['descripcion']));
-          for ($i = 0; $i < 35; $i++) {
+          //for ($i = 0; $i < 35; $i++) {
+         for ($i = 0; $i < 15; $i++) {
             echo ($datadescrpcion[$i] . " ");
           }
+        
           echo "..."
           ?>
 
-          <div id="mostraroculto" class="detallecaracteristica"> <?php for ($i = 35; $i < count($datadescrpcion); $i++) {
+          <div id="mostraroculto" class="detallecaracteristica"> <?php for ($i = 15; $i < count($datadescrpcion); $i++) {
                                                                     echo $datadescrpcion[$i] . " ";
                                                                   } ?></div>
         </p> <br>
