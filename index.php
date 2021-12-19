@@ -46,8 +46,34 @@ $unide1 = mysqli_query($conexion, "select id_producto ,precio,id_categoria from 
 </head>
 
 <body>
+  <?php
+  if (isset($_SESSION['nombre_cliente'])|| isset($_COOKIE['nombre_cliente']))
+  {
+  ?>
+<div >
+  <p id="nomusu">Bienvenido: <span id="usuario"><?php
+  if(isset($_SESSION['nombre_cliente'])){   echo $_SESSION['nombre_cliente'];}
+  if(!isset($_SESSION['nombre_cliente'])&& isset($_COOKIE['nombre_cliente'])){
+    echo $_COOKIE['nombre_cliente'];
+  }
+  ?></span></p>
+</div>
 
+<?php
+
+}
+?>
   <style>
+    #nomusu{
+  font-family:Arial, Helvetica, sans-serif;
+  font-size: 24px;
+  color:#f2f2f2;
+  }
+
+#usuario{
+  color:orange;
+}
+
     form {
       position: absolute;
       width: 60px;
